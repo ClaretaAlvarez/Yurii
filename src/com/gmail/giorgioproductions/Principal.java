@@ -16,12 +16,12 @@ public class Principal extends JavaPlugin implements Listener {
 
 	@Override
 	public void onEnable() {
-		Bukkit.getConsoleSender().sendMessage("§aEl plugin Giorgio ha sido activado correctamente");
+		Bukkit.getConsoleSender().sendMessage("Â§aEl plugin Giorgio ha sido activado correctamente");
 		Bukkit.getPluginManager().registerEvents(this, this);
 	}
 	@Override
 	public void onDisable() {
-		Bukkit.getConsoleSender().sendMessage("§4Deshabilitando plugin Giorgio");
+		Bukkit.getConsoleSender().sendMessage("Â§4Deshabilitando plugin Giorgio");
 	}
 	
 	public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
@@ -34,10 +34,10 @@ public class Principal extends JavaPlugin implements Listener {
 				p.setMaxHealth(100);
 				p.setHealth(100);
 				p.setFoodLevel(20);
-				p.sendMessage("§aAhora tienes 50 corazones");
+				p.sendMessage("Â§aAhora tienes 50 corazones");
 				
 			} else {
-				sender.sendMessage("§4Este comando no se puede ejecutar desde la consola");
+				sender.sendMessage("Â§4Este comando no se puede ejecutar desde la consola");
 			}
 			
 			return true;
@@ -50,10 +50,10 @@ public class Principal extends JavaPlugin implements Listener {
 				
 				Player p = (Player)sender;
 				p.openWorkbench(null, true);
-				p.sendMessage("§aMesa de crafteo abierta");
+				p.sendMessage("Â§aMesa de crafteo abierta");
 				
 			} else {
-				sender.sendMessage("§4Este comando no se puede ejecutar desde la consola");
+				sender.sendMessage("Â§4Este comando no se puede ejecutar desde la consola");
 			}
 			
 			return true;
@@ -66,10 +66,10 @@ if(cmd.getName().equalsIgnoreCase("vidanormal")) {
 				
 				Player p = (Player)sender;
 				p.setMaxHealth(20);
-				p.sendMessage("§aAhora tienes 20 corazones");
+				p.sendMessage("Â§aAhora tienes 20 corazones");
 				
 			} else {
-				sender.sendMessage("§4Este comando no se puede ejecutar desde la consola");
+				sender.sendMessage("Â§4Este comando no se puede ejecutar desde la consola");
 			}
 			
 			return true;
@@ -87,7 +87,7 @@ if(cmd.getName().equalsIgnoreCase("vidanormal")) {
 			e.setCancelled(false);
 		} else {
 			e.setCancelled(true);
-			e.getPlayer().sendMessage("§4No tienes permiso para dropear items");
+			e.getPlayer().sendMessage("Â§4No tienes permiso para dropear items");
 			e.getPlayer().playSound(e.getPlayer().getLocation(), Sound.VILLAGER_NO, 1, 1);
 		}
 		
@@ -100,7 +100,7 @@ if(cmd.getName().equalsIgnoreCase("vidanormal")) {
 			e.setCancelled(false);
 		} else {
 			e.setCancelled(true);
-			e.getPlayer().sendMessage("§4No tienes permiso para abrir el inventario");
+			e.getPlayer().sendMessage("Â§4No tienes permiso para abrir el inventario");
 			e.getPlayer().playSound(e.getPlayer().getLocation(), Sound.VILLAGER_NO, 1, 1);
 		}
 		
@@ -113,8 +113,8 @@ if(cmd.getName().equalsIgnoreCase("vidanormal")) {
 		
 		Player p = e.getPlayer();
 		e.setJoinMessage(null);
-		Bukkit.broadcastMessage("§5" + p.getName() + " §aha entrado al servidor");
-		p.sendMessage("§7Bienvenido al servidor §5Yurii§7.\n§7Esperamos que disfrutes de tu estancia.");
+		Bukkit.broadcastMessage("Â§5" + p.getName() + " Â§aha entrado al servidor");
+		p.sendMessage("Â§7Bienvenido al servidor Â§5YuriiÂ§7.\nÂ§7Esperamos que disfrutes de tu estancia.");
 		
 	}
 	
@@ -123,7 +123,9 @@ if(cmd.getName().equalsIgnoreCase("vidanormal")) {
 		
 		Player p = e.getPlayer();
 		e.setQuitMessage(null);
-		Bukkit.broadcastMessage("§5" + p.getName() + " §4ha salido del servidor");
+		Bukkit.broadcastMessage("Â§5" + p.getName() + " Â§4ha salido del servidor");
 		
 	}
 }
+
+//ladani
