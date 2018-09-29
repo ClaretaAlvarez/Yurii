@@ -1,0 +1,13 @@
+name: Giorgio
+main: com.gmail.giorgioproductions.Principal
+version: 1.6
+commands:
+   vida:
+      description: Con este comando obtienes 50 corazones de vida.
+      usage: /<command>
+   craft:
+      description: Abre la mesa de crafteo.
+      usage: /<command>
+   vidanormal:
+      description: Para volver a tener 20 corazones.
+      usage: /<command>
